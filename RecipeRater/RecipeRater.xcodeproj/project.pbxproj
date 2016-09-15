@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B938EF1D8B2A47001E8708 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B938EE1D8B2A47001E8708 /* RatingControl.swift */; };
 		01EE7DBC1D89E556004C3AD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE7DBB1D89E556004C3AD1 /* AppDelegate.swift */; };
 		01EE7DBE1D89E556004C3AD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE7DBD1D89E556004C3AD1 /* ViewController.swift */; };
 		01EE7DC11D89E556004C3AD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EE7DBF1D89E556004C3AD1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01B938EE1D8B2A47001E8708 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		01EE7DB81D89E556004C3AD1 /* RecipeRater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeRater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EE7DBB1D89E556004C3AD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01EE7DBD1D89E556004C3AD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				01EE7DBB1D89E556004C3AD1 /* AppDelegate.swift */,
 				01EE7DBD1D89E556004C3AD1 /* ViewController.swift */,
 				01EE7DBF1D89E556004C3AD1 /* Main.storyboard */,
+				01B938EE1D8B2A47001E8708 /* RatingControl.swift */,
 				01EE7DC21D89E556004C3AD1 /* Assets.xcassets */,
 				01EE7DC41D89E556004C3AD1 /* LaunchScreen.storyboard */,
 				01EE7DC71D89E556004C3AD1 /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01EE7DBE1D89E556004C3AD1 /* ViewController.swift in Sources */,
+				01B938EF1D8B2A47001E8708 /* RatingControl.swift in Sources */,
 				01EE7DBC1D89E556004C3AD1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +293,7 @@
 				01EE7DCC1D89E556004C3AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
