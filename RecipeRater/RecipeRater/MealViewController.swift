@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MealViewController.swift
 //  RecipeRater
 //
 //  Created by Priya Xavier on 9/14/16.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var nameMealLabel: UILabel!
     
     @IBOutlet weak var ratingControl: RatingControl!
     // MARK: UITextFieldDelegate
@@ -23,7 +22,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        nameMealLabel.text = nameTextField.text
+        
     }
     
     @IBOutlet weak var photoImageView: UIImageView!
