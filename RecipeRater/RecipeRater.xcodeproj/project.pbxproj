@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01830DA01D8C3ADA00D9579C /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01830D9F1D8C3ADA00D9579C /* Meal.swift */; };
+		01830DA81D8C3D3A00D9579C /* RecipeRaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01830DA71D8C3D3A00D9579C /* RecipeRaterTests.swift */; };
+		01830DB01D8C429400D9579C /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01830DAF1D8C429400D9579C /* MealTableViewCell.swift */; };
 		01B938EF1D8B2A47001E8708 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01B938EE1D8B2A47001E8708 /* RatingControl.swift */; };
 		01EE7DBC1D89E556004C3AD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE7DBB1D89E556004C3AD1 /* AppDelegate.swift */; };
 		01EE7DBE1D89E556004C3AD1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EE7DBD1D89E556004C3AD1 /* ViewController.swift */; };
@@ -15,7 +18,22 @@
 		01EE7DC61D89E556004C3AD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01EE7DC41D89E556004C3AD1 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		01830DAA1D8C3D3A00D9579C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01EE7DB01D89E556004C3AD1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01EE7DB71D89E556004C3AD1;
+			remoteInfo = RecipeRater;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		01830D9F1D8C3ADA00D9579C /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		01830DA51D8C3D3900D9579C /* RecipeRaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecipeRaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01830DA71D8C3D3A00D9579C /* RecipeRaterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeRaterTests.swift; sourceTree = "<group>"; };
+		01830DA91D8C3D3A00D9579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01830DAF1D8C429400D9579C /* MealTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		01B938EE1D8B2A47001E8708 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		01EE7DB81D89E556004C3AD1 /* RecipeRater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeRater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01EE7DBB1D89E556004C3AD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -27,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01830DA21D8C3D3900D9579C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01EE7DB51D89E556004C3AD1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01830DA61D8C3D3A00D9579C /* RecipeRaterTests */ = {
+			isa = PBXGroup;
+			children = (
+				01830DA71D8C3D3A00D9579C /* RecipeRaterTests.swift */,
+				01830DA91D8C3D3A00D9579C /* Info.plist */,
+			);
+			path = RecipeRaterTests;
+			sourceTree = "<group>";
+		};
 		01EE7DAF1D89E556004C3AD1 = {
 			isa = PBXGroup;
 			children = (
 				01EE7DBA1D89E556004C3AD1 /* RecipeRater */,
+				01830DA61D8C3D3A00D9579C /* RecipeRaterTests */,
 				01EE7DB91D89E556004C3AD1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				01EE7DB81D89E556004C3AD1 /* RecipeRater.app */,
+				01830DA51D8C3D3900D9579C /* RecipeRaterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				01EE7DBB1D89E556004C3AD1 /* AppDelegate.swift */,
+				01830DAF1D8C429400D9579C /* MealTableViewCell.swift */,
+				01830D9F1D8C3ADA00D9579C /* Meal.swift */,
 				01EE7DBD1D89E556004C3AD1 /* ViewController.swift */,
 				01EE7DBF1D89E556004C3AD1 /* Main.storyboard */,
 				01B938EE1D8B2A47001E8708 /* RatingControl.swift */,
@@ -70,6 +108,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		01830DA41D8C3D3900D9579C /* RecipeRaterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01830DAC1D8C3D3A00D9579C /* Build configuration list for PBXNativeTarget "RecipeRaterTests" */;
+			buildPhases = (
+				01830DA11D8C3D3900D9579C /* Sources */,
+				01830DA21D8C3D3900D9579C /* Frameworks */,
+				01830DA31D8C3D3900D9579C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01830DAB1D8C3D3A00D9579C /* PBXTargetDependency */,
+			);
+			name = RecipeRaterTests;
+			productName = RecipeRaterTests;
+			productReference = 01830DA51D8C3D3900D9579C /* RecipeRaterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		01EE7DB71D89E556004C3AD1 /* RecipeRater */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01EE7DCA1D89E556004C3AD1 /* Build configuration list for PBXNativeTarget "RecipeRater" */;
@@ -97,6 +153,11 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Guild/SA;
 				TargetAttributes = {
+					01830DA41D8C3D3900D9579C = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SKJ49N4758;
+						TestTargetID = 01EE7DB71D89E556004C3AD1;
+					};
 					01EE7DB71D89E556004C3AD1 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = SKJ49N4758;
@@ -117,11 +178,19 @@
 			projectRoot = "";
 			targets = (
 				01EE7DB71D89E556004C3AD1 /* RecipeRater */,
+				01830DA41D8C3D3900D9579C /* RecipeRaterTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01830DA31D8C3D3900D9579C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01EE7DB61D89E556004C3AD1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,17 +204,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01830DA11D8C3D3900D9579C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01830DA81D8C3D3A00D9579C /* RecipeRaterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01EE7DB41D89E556004C3AD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01830DA01D8C3ADA00D9579C /* Meal.swift in Sources */,
 				01EE7DBE1D89E556004C3AD1 /* ViewController.swift in Sources */,
 				01B938EF1D8B2A47001E8708 /* RatingControl.swift in Sources */,
 				01EE7DBC1D89E556004C3AD1 /* AppDelegate.swift in Sources */,
+				01830DB01D8C429400D9579C /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01830DAB1D8C3D3A00D9579C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01EE7DB71D89E556004C3AD1 /* RecipeRater */;
+			targetProxy = 01830DAA1D8C3D3A00D9579C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		01EE7DBF1D89E556004C3AD1 /* Main.storyboard */ = {
@@ -167,6 +254,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		01830DAD1D8C3D3A00D9579C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RecipeRaterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.guildsa.RecipeRaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeRater.app/RecipeRater";
+			};
+			name = Debug;
+		};
+		01830DAE1D8C3D3A00D9579C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RecipeRaterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.guildsa.RecipeRaterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RecipeRater.app/RecipeRater";
+			};
+			name = Release;
+		};
 		01EE7DC81D89E556004C3AD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -277,6 +388,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01830DAC1D8C3D3A00D9579C /* Build configuration list for PBXNativeTarget "RecipeRaterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01830DAD1D8C3D3A00D9579C /* Debug */,
+				01830DAE1D8C3D3A00D9579C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		01EE7DB31D89E556004C3AD1 /* Build configuration list for PBXProject "RecipeRater" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

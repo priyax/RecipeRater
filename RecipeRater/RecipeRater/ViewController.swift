@@ -14,6 +14,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var nameMealLabel: UILabel!
     
+    @IBOutlet weak var ratingControl: RatingControl!
     // MARK: UITextFieldDelegate
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
@@ -28,10 +29,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     @IBOutlet weak var photoImageView: UIImageView!
     
     
-    // MARK: Actions
-    
-    @IBAction func setDefaultLabel(sender: UIButton) {
-    }
+    // MARK: Action
     
     @IBAction func selectImageFromPhotoLibrary(sender: UITapGestureRecognizer) {
          // Hide the keyboard.
