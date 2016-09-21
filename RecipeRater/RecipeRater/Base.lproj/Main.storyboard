@@ -65,7 +65,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="XB4-Xv-yWb">
                             <connections>
-                                <segue destination="HDe-W5-gKW" kind="unwind" unwindAction="unwindToMealList:" id="6ay-Cg-w1A"/>
+                                <segue destination="HDe-W5-gKW" kind="unwind" identifier="Unwind" unwindAction="unwindToMealList:" id="6ay-Cg-w1A"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -74,7 +74,7 @@
                         <outlet property="photoImageView" destination="kMS-cz-3ic" id="2R9-WC-CH5"/>
                         <outlet property="ratingControl" destination="YiV-XW-UOW" id="Qqu-aK-cmz"/>
                         <outlet property="save" destination="XB4-Xv-yWb" id="n39-Kc-2Ri"/>
-                        <segue destination="HDe-W5-gKW" kind="unwind" unwindAction="unwindToMealList:" id="lFP-97-LrM"/>
+                        <segue destination="HDe-W5-gKW" kind="unwind" identifier="UnwindtoMealList" unwindAction="unwindToMealList:" id="lFP-97-LrM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
