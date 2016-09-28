@@ -20,8 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sTR-Z2-hUt">
-                                <frame key="frameInset" minX="20" minY="74" width="343" height="441"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sTR-Z2-hUt">
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="288" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meal Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H1l-5y-meh">
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -49,12 +48,15 @@
                                     <constraint firstItem="H1l-5y-meh" firstAttribute="leading" secondItem="sTR-Z2-hUt" secondAttribute="leading" id="V0h-ze-eN3"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="hlZ-Ha-HWH"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="sTR-Z2-hUt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="3NB-zi-HQZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="sTR-Z2-hUt" secondAttribute="trailing" id="jJM-aS-b6k"/>
+                            <constraint firstItem="hlZ-Ha-HWH" firstAttribute="centerX" secondItem="kMS-cz-3ic" secondAttribute="centerX" id="qa0-Bs-nmD"/>
                             <constraint firstItem="sTR-Z2-hUt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uzK-9R-Ch8"/>
+                            <constraint firstItem="hlZ-Ha-HWH" firstAttribute="centerY" secondItem="kMS-cz-3ic" secondAttribute="centerY" id="zjX-7x-8D0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="dhm-XW-SPS">
@@ -63,9 +65,9 @@
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="JNB-if-SdA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="XB4-Xv-yWb">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="XB4-Xv-yWb" userLabel="SaveButton">
                             <connections>
-                                <segue destination="HDe-W5-gKW" kind="unwind" unwindAction="unwindToMealList:" id="6ay-Cg-w1A"/>
+                                <action selector="save:" destination="BYZ-38-t0r" id="n1I-uc-rjI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,8 +75,9 @@
                         <outlet property="nameTextField" destination="H1l-5y-meh" id="Tvh-b3-VIK"/>
                         <outlet property="photoImageView" destination="kMS-cz-3ic" id="2R9-WC-CH5"/>
                         <outlet property="ratingControl" destination="YiV-XW-UOW" id="Qqu-aK-cmz"/>
-                        <outlet property="save" destination="XB4-Xv-yWb" id="n39-Kc-2Ri"/>
-                        <segue destination="HDe-W5-gKW" kind="unwind" unwindAction="unwindToMealList:" id="lFP-97-LrM"/>
+                        <outlet property="saveButton" destination="XB4-Xv-yWb" id="RcR-wM-aVe"/>
+                        <outlet property="saveSpinner" destination="hlZ-Ha-HWH" id="tAE-0u-NQM"/>
+                        <segue destination="HDe-W5-gKW" kind="unwind" identifier="unwindToMealList" unwindAction="unwindToMealList:" id="51A-zZ-GRA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,7 +103,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wqn-VJ-FmV" id="X2M-t6-Szz">
-                                    <frame key="frameInset" width="375" height="89"/>
+                                    <frame key="frameInset" width="375" height="90"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-8C-ail" userLabel="Photo Image View">
@@ -162,7 +165,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bu1-Ve-5Z4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-400" y="994"/>
+            <point key="canvasLocation" x="-622" y="994"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LvT-S6-fie">
@@ -180,7 +183,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsP-uC-zHX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="637" y="1459"/>
+            <point key="canvasLocation" x="742" y="1695"/>
         </scene>
     </scenes>
     <resources>
